@@ -1,69 +1,103 @@
-# React + TypeScript + Vite
+# Migração de Site: Dra. Fernanda Sena (WordPress → React + TypeScript + Tailwind)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este documento detalha o plano de ação para a migração completa do site oficial da [Dra. Fernanda Sena](https://drafernandasena.com.br/), atualmente hospedado em **WordPress**, para uma nova plataforma moderna e otimizada, utilizando **React + TypeScript + Tailwind CSS**.
 
-Currently, two official plugins are available:
+O objetivo é criar uma experiência de usuário mais rápida, responsiva e com um design atrativo, mantendo a estrutura e o conteúdo existentes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📑 Roadmap do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### ✅ Etapa 1 – Setup Inicial (já concluída)
+- Criado o projeto com **React + TypeScript + Tailwind**.
+- Instaladas bibliotecas essenciais:
+  - `react-router-dom` → rotas e navegação.
+  - `react-helmet-async` → SEO (títulos, meta tags para Google, Facebook e Instagram).
+  - `lucide-react` (ou `react-icons`) → ícones sociais.
+- Estrutura de pastas definida:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
+src/
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+├── assets/ # imagens e ícones
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+├── components/ # header, footer, sidebar, botões
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+├── pages/ # cada página do site
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+├── routes/ # configuração de rotas
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+├── App.tsx
+
+└── main.tsx
+
+---
+
+- Repositório configurado e enviado para o **GitHub**.
+
+---
+
+### ⏳ Etapa 2 – Sidebar + Header
+- Criar **header fixo** com logo.
+- Implementar **menu lateral (sidebar) responsivo** para navegação em mobile.
+- Adicionar botão em destaque **"Agendar Consulta"** com link para WhatsApp.
+
+---
+
+### ⏳ Etapa 3 – Footer
+- Adicionar:
+- Endereço da clínica (**Google Maps embed**).
+- Ícones de contato (**WhatsApp, Email, Instagram**).
+- Informar responsável técnico:  
+  **Dra. Fernanda Sena Rabelo Santos**.
+
+---
+
+### ⏳ Etapa 4 – Página Principal
+- Estrutura em **carrossel vertical** (seções deslizando de cima para baixo).
+- Conteúdo:
+- Foto principal em destaque.
+- Texto explicativo sobre a clínica.
+- CTA: **"Agende sua consulta"**.
+
+---
+
+### ⏳ Etapa 5 – Página "Fernanda Sena"
+- Formato em **carrossel vertical**.
+- Conteúdo:
+- Apresentação da médica.
+- Histórico e especialização.
+
+---
+
+### ⏳ Etapa 6 – Página "A Consulta Geriátrica"
+- Layout normal, sem carrossel.
+- Conteúdo separado em **cards explicativos**.
+
+---
+
+### ⏳ Etapa 7 – Página "Especialidades"
+- Lista de especialidades.
+- Links para páginas:
+- **Check-up**
+- **Envelhecimento Saudável**
+
+---
+
+### ⏳ Etapa 8 – Agendamento
+- Botão fixo **"Agendar Consulta"** (verde) → link direto para WhatsApp.
+- Avaliar:
+- Colocar **email no footer**, **ou**
+- Criar **página Contato** com formulário (mais seguro, evita spam).
+
+---
+
+## 🔎 Observações sobre Imagens
+- O WordPress gera múltiplas resoluções automaticamente.
+- No **React**:
+- Usar a **maior resolução** disponível (preferência `.webp` pela leveza).
+- Tailwind garante responsividade e redimensionamento sem precisar de várias versões.
+- Se necessário otimizar:
+- Usar serviços como **ImageKit** ou **Cloudinary**.
+
+---

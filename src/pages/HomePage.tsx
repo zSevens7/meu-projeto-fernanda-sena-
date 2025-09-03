@@ -151,7 +151,7 @@ export function HomePage() {
             </p>
             <div className="text-center md:text-left">
               <Link
-                to="/envelhecimento-saudavel"
+                to="/especialidades/envelhecimento-saudavel"
                 className="inline-block border-2 border-[#E6D7B4] bg-transparent text-[#E6D7B4] font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:bg-[#E6D7B4] hover:text-[#2E4E1E]"
               >
                 Envelhecimento Saudável
@@ -192,7 +192,7 @@ export function HomePage() {
             </p>
             <div className="text-center md:text-left">
               <Link
-                to="/check-up"
+                to="/especialidades/checkup"
                 className="inline-block border-2 border-[#E6D7B4] bg-transparent text-[#E6D7B4] font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:bg-[#E6D7B4] hover:text-[#2E4E1E]"
               >
                 Mais sobre Check-up

@@ -19,15 +19,15 @@ O objetivo é criar uma experiência de usuário mais rápida, responsiva e com 
 ---
 src/
 
-├── assets/ # imagens e ícones
+├── assets/ # imagens
 
-├── components/ # header, footer, sidebar, botões
+├── components/ # HeaderHome e HeaderGenerico, footer, 
 
 ├── pages/ # cada página do site
 
-├── routes/ # configuração de rotas
+├── routes/ # <- não foi utilizado
 
-├── App.tsx
+├── App.tsx -< Link das routas
 
 └── main.tsx
 
@@ -37,15 +37,14 @@ src/
 
 ---
 
-### ⏳ Etapa 2 – Sidebar + Header
-- Criar **header fixo** com logo.
-- Implementar **menu lateral (sidebar) responsivo** para navegação em mobile.
-- Adicionar botão em destaque **"Agendar Consulta"** com link para WhatsApp.
+### ✅ Etapa 2 – Sidebar + Header
+- Header fixo com logo.
+- Menu lateral responsivo para mobile.
+- Botão em destaque **"Agendar Consulta"** com link para WhatsApp.
 
 ---
 
-### ⏳ Etapa 3 – Footer
-- Adicionar:
+### ✅ Etapa 3 – Footer
 - Endereço da clínica (**Google Maps embed**).
 - Ícones de contato (**WhatsApp, Email, Instagram**).
 - Informar responsável técnico:  
@@ -53,51 +52,50 @@ src/
 
 ---
 
-### ⏳ Etapa 4 – Página Principal
+### ✅ Etapa 4 – Página Principal
 - Estrutura em **carrossel vertical** (seções deslizando de cima para baixo).
-- Conteúdo:
 - Foto principal em destaque.
 - Texto explicativo sobre a clínica.
 - CTA: **"Agende sua consulta"**.
 
 ---
 
-### ⏳ Etapa 5 – Página "Fernanda Sena"
+### ✅ Etapa 5 – Página "Fernanda Sena"
 - Formato em **carrossel vertical**.
-- Conteúdo:
 - Apresentação da médica.
 - Histórico e especialização.
 
 ---
 
-### ⏳ Etapa 6 – Página "A Consulta Geriátrica"
+### ✅ Etapa 6 – Página "A Consulta Geriátrica"
 - Layout normal, sem carrossel.
-- Conteúdo separado em **cards explicativos**.
+- Conteúdo em **cards explicativos**.
 
 ---
 
-### ⏳ Etapa 7 – Página "Especialidades"
-- Lista de especialidades.
-- Links para páginas:
-- **Check-up**
-- **Envelhecimento Saudável**
+### ⚠️ Etapa 7 – Página "Especialidades"  
+- Estrutura criada.  
+- Falta apenas alinhar com a cliente quais especialidades serão exibidas e em qual formato.
 
 ---
 
-### ⏳ Etapa 8 – Agendamento
+### ✅ Etapa 8 – Agendamento
 - Botão fixo **"Agendar Consulta"** (verde) → link direto para WhatsApp.
-- Avaliar:
-- Colocar **email no footer**, **ou**
-- Criar **página Contato** com formulário (mais seguro, evita spam).
+- Email incluso no footer.
 
 ---
 
 ## 🔎 Observações sobre Imagens
 - O WordPress gera múltiplas resoluções automaticamente.
 - No **React**:
-- Usar a **maior resolução** disponível (preferência `.webp` pela leveza).
-- Tailwind garante responsividade e redimensionamento sem precisar de várias versões.
+  - Usar a **maior resolução** disponível (preferência `.webp` pela leveza).
+  - Tailwind garante responsividade sem precisar de múltiplas versões.
 - Se necessário otimizar:
-- Usar serviços como **ImageKit** ou **Cloudinary**.
+  - Usar serviços como **ImageKit** ou **Cloudinary**.
 
 ---
+
+## 🚀 Próximos Passos
+- Reunião com a cliente (**Dra. Fernanda**) para validação do site.  
+- Definição final da seção **Especialidades**.  
+- Ajustes de refinamento conforme feedback.

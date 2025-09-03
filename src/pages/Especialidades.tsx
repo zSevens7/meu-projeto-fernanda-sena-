@@ -1,4 +1,5 @@
 
+import { Helmet } from 'react-helmet-async';
 import HeaderGenerico from '../components/HeaderGenerico';
 import Footer from '../components/footer';
 import { Link } from 'react-router-dom';
@@ -7,6 +8,17 @@ import EspecialidadesImg from '../assets/img/Especialidades.webp'; // Certifique
 export default function Especialidades() {
   return (
     <div className="bg-white min-h-screen flex flex-col">
+      <Helmet>
+        <title>Especialidades - Dra. Fernanda Sena</title>
+        <meta name="description" content="Conheça as especialidades em geriatria da Dra. Fernanda Sena, com foco em check-up e envelhecimento saudável." />
+        <meta property="og:title" content="Especialidades - Dra. Fernanda Sena" />
+        <meta property="og:description" content="Conheça as especialidades em geriatria da Dra. Fernanda Sena, com foco em check-up e envelhecimento saudável." />
+        <meta property="og:type" content="website" />
+        {/* Você pode adicionar uma URL de imagem aqui para as redes sociais, por exemplo: */}
+        {/* <meta property="og:image" content="https://seusite.com/imagem-especialidades.jpg" /> */}
+        {/* <meta property="og:url" content="https://seusite.com/especialidades" /> */}
+      </Helmet>
+      
       <HeaderGenerico />
 
       <main className="container mx-auto px-4 py-30 flex-grow">

@@ -1,10 +1,22 @@
 
+import { Helmet } from 'react-helmet-async';
 import HeaderGenerico from '../components/HeaderGenerico';
 import Footer from '../components/footer';
 
 export default function EnvelhecimentoSaudavel() {
   return (
     <div className="bg-white min-h-screen flex flex-col">
+      <Helmet>
+        <title>Envelhecimento Saudável - Dra. Fernanda Sena</title>
+        <meta name="description" content="Descubra a importância do envelhecimento saudável com a Dra. Fernanda Sena. Oferecemos um acompanhamento especializado para a maturidade." />
+        <meta property="og:title" content="Envelhecimento Saudável - Dra. Fernanda Sena" />
+        <meta property="og:description" content="Descubra a importância do envelhecimento saudável com a Dra. Fernanda Sena. Oferecemos um acompanhamento especializado para a maturidade." />
+        <meta property="og:type" content="website" />
+        {/* Você pode adicionar uma URL de imagem aqui para as redes sociais, por exemplo: */}
+        {/* <meta property="og:image" content="https://seusite.com/imagem-envelhecimento-saudavel.jpg" /> */}
+        {/* <meta property="og:url" content="https://seusite.com/envelhecimento-saudavel" /> */}
+      </Helmet>
+
       {/* O componente HeaderGenerico é importado e usado aqui */}
       <HeaderGenerico />
 

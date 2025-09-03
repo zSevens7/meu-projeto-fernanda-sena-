@@ -1,3 +1,5 @@
+
+import { Helmet } from 'react-helmet-async';
 import HeaderGenerico from '../components/HeaderGenerico';
 import Footer from '../components/footer';
 import desktopImage from '../assets/img/Banner-Fernanda-Sena.webp';
@@ -6,6 +8,17 @@ import mobileImage from '../assets/img/Banner-Fernanda-Sena-510x382.webp';
 export default function FernandaSena() {
   return (
     <div className="bg-white min-h-screen flex flex-col">
+      <Helmet>
+        <title>Dra. Fernanda Sena - Clínica Médica e Geriatria</title>
+        <meta name="description" content="Conheça a Dra. Fernanda Sena, médica especialista em Clínica Médica e Geriatria, dedicada a um envelhecimento saudável e humanizado." />
+        <meta property="og:title" content="Dra. Fernanda Sena - Clínica Médica e Geriatria" />
+        <meta property="og:description" content="Conheça a Dra. Fernanda Sena, médica especialista em Clínica Médica e Geriatria, dedicada a um envelhecimento saudável e humanizado." />
+        <meta property="og:type" content="website" />
+        {/* Você pode adicionar uma URL de imagem aqui para as redes sociais, por exemplo: */}
+        {/* <meta property="og:image" content="https://seusite.com/imagem-fernanda-sena.jpg" /> */}
+        {/* <meta property="og:url" content="https://seusite.com/fernanda-sena" /> */}
+      </Helmet>
+      
       <HeaderGenerico />
 
       {/* Adicionando padding-top para evitar que o conteúdo fique por baixo do cabeçalho fixo */}

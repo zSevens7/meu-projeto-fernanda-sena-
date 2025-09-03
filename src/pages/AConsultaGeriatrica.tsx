@@ -1,3 +1,5 @@
+
+import { Helmet } from 'react-helmet-async';
 import HeaderGenerico from '../components/HeaderGenerico';
 import Footer from '../components/footer';
 import FernandaCard from '../assets/img/Imagem-sidebar-Dra-Fernanda-Sena-1.webp'
@@ -5,7 +7,7 @@ import Velhos from '../assets/img/Imagem-interna-consulta-geriatrica.webp'
 import { Link } from 'react-router-dom';
 import { ClipboardList, Stethoscope, Handshake, CalendarCheck, Book, Users } from 'lucide-react';
 
-export default function FernandaSena() {
+export default function AConsultaGeriatrica() {
   const cards = [
     {
       icon: <ClipboardList size={48} className="text-[#2E4E1E]" />,
@@ -59,6 +61,17 @@ export default function FernandaSena() {
 
   return (
     <div className="bg-white min-h-screen flex flex-col">
+      <Helmet>
+        <title>A Consulta Geriátrica - Dra. Fernanda Sena</title>
+        <meta name="description" content="Saiba como se preparar para a consulta geriátrica com a Dra. Fernanda Sena e conheça a importância de um acompanhamento completo para a sua saúde." />
+        <meta property="og:title" content="A Consulta Geriátrica - Dra. Fernanda Sena" />
+        <meta property="og:description" content="Saiba como se preparar para a consulta geriátrica com a Dra. Fernanda Sena e conheça a importância de um acompanhamento completo para a sua saúde." />
+        <meta property="og:type" content="website" />
+        {/* Você pode adicionar uma URL de imagem aqui para as redes sociais, por exemplo: */}
+        {/* <meta property="og:image" content="https://seusite.com/imagem-consulta.jpg" /> */}
+        {/* <meta property="og:url" content="https://seusite.com/a-consulta-geriatrica" /> */}
+      </Helmet>
+      
       <HeaderGenerico />
 
       <main className="container mx-auto px-4 pt-32 pb-16 flex-grow">

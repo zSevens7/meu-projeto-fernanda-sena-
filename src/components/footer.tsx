@@ -119,7 +119,7 @@ export default function Footer() {
             <img 
               src={logo} 
               alt="Logo Dra. Fernanda Sena" 
-              className="h-20 object-contain"
+              className="h-25 object-contain"
             />
           </div>
         </div>

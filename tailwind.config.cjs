@@ -33,9 +33,9 @@ module.exports = {
         'mint-green': '#98FF98',
         'olive-green': '#808000',
         'charcoal-gray': '#36454F',
-        'forest green': '#014421',
-        'bottle green': '#006A4E',
- 
+        // Nome da cor corrigido, sem espaço.
+        'forest-green-2': '#014421',
+        'bottle-green': '#006A4E',
       },
       // Adicionando text shadows personalizados
       textShadow: {

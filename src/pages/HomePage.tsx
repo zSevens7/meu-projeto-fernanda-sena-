@@ -46,7 +46,7 @@ export function HomePage() {
         <main className="relative z-10 h-full flex flex-col items-center justify-start p-4 text-center">
           {/* Ajuste a margem superior (mt) para a distância desejada */}
           <div className="mt-60">
-            <h1 className="text-5xl font-extrabold mb-4 leading-tight px-2">
+            <h1 className="text-4xl font-extrabold mb-4 leading-tight px-2">
               <span className="font-serif text-[#E6D7B4]">A saúde do futuro</span>
               <br />
               <span className="font-sans font-normal text-3xl text-white">começa com cuidados de hoje!</span>

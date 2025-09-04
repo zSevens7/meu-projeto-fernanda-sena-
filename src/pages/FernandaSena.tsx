@@ -10,8 +10,8 @@ import unicampLogo from '../assets/logo/unicamp.png';
 import supremaLogo from '../assets/logo/suprema.png';
 import madreLogo from '../assets/logo/madre.png';
 
-import abordagemImage from '../assets/img/IMG_28493.jpg';
-import atuacaoImage from '../assets/img/IMG_28373.jpg';
+import abordagemImage from '../assets/img/imagem28493.jpg';
+import atuacaoImage from '../assets/img/imagem28373.jpg';
 
 export default function FernandaSena() {
   return (

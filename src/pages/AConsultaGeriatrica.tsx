@@ -7,7 +7,7 @@ import Velhos from '../assets/img/Imagem-interna-consulta-geriatrica.webp'
 import { Link } from 'react-router-dom';
 import { ClipboardList, Stethoscope, Handshake, CalendarCheck, Book, Users } from 'lucide-react';
 
-import novaImagemLateral from '../assets/img/IMG_28433.jpg';
+import novaImagemLateral from '../assets/img/imagem28433.jpg';
 
 export default function AConsultaGeriatrica() {
   const cards = [

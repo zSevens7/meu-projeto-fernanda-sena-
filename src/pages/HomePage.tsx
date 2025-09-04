@@ -4,8 +4,8 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import heroBanner from "../assets/img/Banner-Fernanda-Sena-2.webp";
 import heroBannerMobile from "../assets/img/Banner-Mobile-Fernanda-Sena.webp";
-import FernandaDestaque from "../assets/img/IMG_28352.jpg";
-import FernandaDestaqueMobile from "../assets/img/IMG_28352.jpg";
+import FernandaDestaque from "../assets/img/imagem28352.jpg";
+import FernandaDestaqueMobile from "../assets/img/imagem28352.jpg";
 import AconsultaGeriatrica from "../assets/img/Imagem-destaque-secao-consulta-geriatrica.webp";
 import EnvelhecimentoSaudavel from "../assets/img/Imagem-destaque-secao-Envelhecimento-Saudavel.webp";
 import Checkup from "../assets/img/Imagem-destaque-secao-check-up.webp"

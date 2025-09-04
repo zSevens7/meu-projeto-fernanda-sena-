@@ -2,10 +2,12 @@
 import { Helmet } from 'react-helmet-async';
 import HeaderGenerico from '../components/HeaderGenerico';
 import Footer from '../components/footer';
-import FernandaCard from '../assets/img/Imagem-sidebar-Dra-Fernanda-Sena-1.webp'
+
 import Velhos from '../assets/img/Imagem-interna-consulta-geriatrica.webp'
 import { Link } from 'react-router-dom';
 import { ClipboardList, Stethoscope, Handshake, CalendarCheck, Book, Users } from 'lucide-react';
+
+import novaImagemLateral from '../assets/img/IMG_2843 3.jpg';
 
 export default function AConsultaGeriatrica() {
   const cards = [
@@ -118,30 +120,28 @@ export default function AConsultaGeriatrica() {
             </div>
           </div>
 
+
           {/* Card Lateral - Barra de Informações */}
           <aside className="w-full lg:w-80">
-            <div className="bg-[#f2f2f2] rounded-lg shadow-lg overflow-hidden">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center text-center p-6">
+              <h2 className="text-xl font-bold font-serif text-[#2E4E1E] mb-2">Conheça a Dra. Fernanda Sena</h2>
+              <p className="text-sm text-[#36454F] mb-4">
+                Descubra a filosofia de trabalho de uma médica que une o rigor científico da geriatria com um cuidado profundamente humanizado.
+              </p>
+              <Link
+                to="/fernanda-sena"
+                className="inline-block border-2 border-[#E6D7B4] bg-white text-[#2E4E1E] font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:bg-[#E6D7B4] hover:border-[#36454F] hover:text-white text-center w-full mb-4"
+              >
+                Leia a Biografia Completa
+              </Link>
               <img
-                src={FernandaCard}
-                alt="Dra. Fernanda Sena"
+                src={novaImagemLateral}
+                alt="Dra. Fernanda Sena apontando"
                 className="w-full h-auto object-cover"
               />
-              <div className="p-6">
-                <h2 className="text-3xl font-serif text-[#2E4E1E] mb-2">Fernanda Sena</h2>
-                <p className="text-sm text-[#36454F]">
-                  A Dra. Fernanda Sena é uma médica especializada em Clínica Médica e Geriatria, com um compromisso especial em promover o envelhecimento saudável. Com residência em geriatria pela USP (Universidade de São Paulo) e experiência em ambientes de alta complexidade como o Hospital das Clínicas, ela integra conhecimento científico com atendimento humanizado para garantir o melhor cuidado aos seus pacientes.
-                </p>
-              </div>
-              <div className="p-6">
-                <Link
-                  to="/fernanda-sena"
-                  className="inline-block border-2 border-[#E6D7B4] bg-white text-[#2E4E1E] font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:bg-[#E6D7B4] hover:border-[#36454F] hover:text-white text-center w-full"
-                >
-                  Conheça a Dra. Fernanda
-                </Link>
-              </div>
             </div>
           </aside>
+
         </div>
 
         {/* Seção com os Cards de Dicas */}

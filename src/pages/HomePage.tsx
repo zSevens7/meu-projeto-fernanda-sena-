@@ -15,11 +15,32 @@ export function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Dra. Fernanda Sena | Geriatria e Cuidados</title>
+        <title>Dra. Fernanda Sena | Geriatria em Campinas-SP</title>
         <meta
           name="description"
-          content="Página inicial da Dra. Fernanda Sena, especialista em geriatria em Campinas - SP."
+          content="Dra. Fernanda Sena é especialista em geriatria em Campinas-SP. Cuidados personalizados para envelhecimento saudável e qualidade de vida."
         />
+        <meta
+          name="keywords"
+          content="geriatria, geriatria Campinas, Dra. Fernanda Sena, envelhecimento saudável, check-up geriátrico, consulta geriátrica"
+        />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Dra. Fernanda Sena | Geriatria em Campinas-SP" />
+        <meta property="og:description" content="Dra. Fernanda Sena oferece cuidados personalizados para envelhecimento saudável e qualidade de vida." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://drafernandasena.com.br/" />
+        <meta property="og:image" content="https://drafernandasena.com.br/assets/img/FernandaDestaque.jpg" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Dra. Fernanda Sena | Geriatria em Campinas-SP" />
+        <meta name="twitter:description" content="Cuidados personalizados para envelhecimento saudável e qualidade de vida." />
+        <meta name="twitter:image" content="https://drafernandasena.com.br/assets/img/FernandaDestaque.jpg" />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
       </Helmet>
 
       {/* Banner para desktop */}

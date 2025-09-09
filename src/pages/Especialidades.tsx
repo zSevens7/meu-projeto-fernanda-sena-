@@ -9,15 +9,35 @@ export default function Especialidades() {
   return (
     <div className="bg-white min-h-screen flex flex-col">
       <Helmet>
-        <title>Especialidades - Dra. Fernanda Sena</title>
-        <meta name="description" content="Conheça as especialidades em geriatria da Dra. Fernanda Sena, com foco em check-up e envelhecimento saudável." />
-        <meta property="og:title" content="Especialidades - Dra. Fernanda Sena" />
-        <meta property="og:description" content="Conheça as especialidades em geriatria da Dra. Fernanda Sena, com foco em check-up e envelhecimento saudável." />
-        <meta property="og:type" content="website" />
-        {/* Você pode adicionar uma URL de imagem aqui para as redes sociais, por exemplo: */}
-        {/* <meta property="og:image" content="https://seusite.com/imagem-especialidades.jpg" /> */}
-        {/* <meta property="og:url" content="https://seusite.com/especialidades" /> */}
-      </Helmet>
+      {/* Título e descrição */}
+      <title>Especialidades - Dra. Fernanda Sena</title>
+      <meta
+        name="description"
+        content="Conheça as especialidades em geriatria da Dra. Fernanda Sena, com foco em check-up, envelhecimento saudável e cuidados humanizados."
+      />
+      <meta
+        name="keywords"
+        content="geriatria, especialidades, check-up geriátrico, envelhecimento saudável, Dra. Fernanda Sena, cuidados humanizados, Campinas"
+      />
+      <meta name="robots" content="index, follow" />
+
+      {/* Open Graph para redes sociais */}
+      <meta property="og:title" content="Especialidades - Dra. Fernanda Sena" />
+      <meta property="og:description" content="Conheça as especialidades em geriatria da Dra. Fernanda Sena, com foco em check-up, envelhecimento saudável e cuidados humanizados." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://drafernandasena.com.br/especialidades" />
+      <meta property="og:image" content="https://drafernandasena.com.br/assets/img/Especialidades.webp" />
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Especialidades - Dra. Fernanda Sena" />
+      <meta name="twitter:description" content="Conheça as especialidades em geriatria da Dra. Fernanda Sena, com foco em check-up, envelhecimento saudável e cuidados humanizados." />
+      <meta name="twitter:image" content="https://drafernandasena.com.br/assets/img/Especialidades.webp" />
+
+      {/* Favicon (quando disponível) */}
+      {/* <link rel="icon" href="/favicon.ico" /> */}
+    </Helmet>
+
       
       <HeaderGenerico />
 

@@ -16,16 +16,37 @@ import atuacaoImage from '../assets/img/imagem28373.jpg';
 export default function FernandaSena() {
   return (
     <div className="bg-white min-h-screen flex flex-col">
+      
       <Helmet>
+        {/* Título e descrição */}
         <title>Dra. Fernanda Sena - Clínica Médica e Geriatria</title>
-        <meta name="description" content="Conheça a Dra. Fernanda Sena, médica especialista em Clínica Médica e Geriatria, dedicada a um envelhecimento saudável e humanizado." />
+        <meta
+          name="description"
+          content="Conheça a Dra. Fernanda Sena, médica especialista em Clínica Médica e Geriatria, dedicada a um envelhecimento saudável e humanizado em Campinas-SP."
+        />
+        <meta
+          name="keywords"
+          content="Dra. Fernanda Sena, geriatria, clínica médica, envelhecimento saudável, Campinas, check-up geriátrico, consulta geriátrica"
+        />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph para redes sociais */}
         <meta property="og:title" content="Dra. Fernanda Sena - Clínica Médica e Geriatria" />
         <meta property="og:description" content="Conheça a Dra. Fernanda Sena, médica especialista em Clínica Médica e Geriatria, dedicada a um envelhecimento saudável e humanizado." />
         <meta property="og:type" content="website" />
-        {/* Adicionei a tag og:image para exibir a imagem principal em compartilhamentos */}
-        <meta property="og:image" content={desktopImage} />
-        <meta property="og:url" content="https://seusite.com/fernanda-sena" />
+        <meta property="og:url" content="https://drafernandasena.com.br/fernanda-sena" />
+        <meta property="og:image" content="https://drafernandasena.com.br/assets/img/Banner-Fernanda-Sena.webp" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Dra. Fernanda Sena - Clínica Médica e Geriatria" />
+        <meta name="twitter:description" content="Conheça a Dra. Fernanda Sena, médica especializada em Clínica Médica e Geriatria, dedicada a um envelhecimento saudável e humanizado." />
+        <meta name="twitter:image" content="https://drafernandasena.com.br/assets/img/Banner-Fernanda-Sena.webp" />
+
+        {/* Favicon (depois que você adicionar) */}
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Helmet>
+
       
       <HeaderGenerico />
 

@@ -64,14 +64,33 @@ export default function AConsultaGeriatrica() {
   return (
     <div className="bg-white min-h-screen flex flex-col">
       <Helmet>
+        {/* Título e descrição */}
         <title>A Consulta Geriátrica - Dra. Fernanda Sena</title>
-        <meta name="description" content="Saiba como se preparar para a consulta geriátrica com a Dra. Fernanda Sena e conheça a importância de um acompanhamento completo para a sua saúde." />
+        <meta
+          name="description"
+          content="Saiba como se preparar para a consulta geriátrica com a Dra. Fernanda Sena e conheça a importância de um acompanhamento completo para a sua saúde em Campinas-SP."
+        />
+        <meta
+          name="keywords"
+          content="consulta geriátrica, Dra. Fernanda Sena, geriatria, envelhecimento saudável, check-up geriátrico, Campinas, atendimento humanizado"
+        />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph para redes sociais */}
         <meta property="og:title" content="A Consulta Geriátrica - Dra. Fernanda Sena" />
-        <meta property="og:description" content="Saiba como se preparar para a consulta geriátrica com a Dra. Fernanda Sena e conheça a importância de um acompanhamento completo para a sua saúde." />
+        <meta property="og:description" content="Saiba como se preparar para a consulta geriátrica com a Dra. Fernanda Sena e conheça a importância de um acompanhamento completo para a sua saúde em Campinas-SP." />
         <meta property="og:type" content="website" />
-        {/* Você pode adicionar uma URL de imagem aqui para as redes sociais, por exemplo: */}
-        {/* <meta property="og:image" content="https://seusite.com/imagem-consulta.jpg" /> */}
-        {/* <meta property="og:url" content="https://seusite.com/a-consulta-geriatrica" /> */}
+        <meta property="og:url" content="https://drafernandasena.com.br/a-consulta-geriatrica" />
+        <meta property="og:image" content="https://drafernandasena.com.br/assets/img/Imagem-interna-consulta-geriatrica.webp" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="A Consulta Geriátrica - Dra. Fernanda Sena" />
+        <meta name="twitter:description" content="Saiba como se preparar para a consulta geriátrica com a Dra. Fernanda Sena e conheça a importância de um acompanhamento completo para a sua saúde." />
+        <meta name="twitter:image" content="https://drafernandasena.com.br/assets/img/Imagem-interna-consulta-geriatrica.webp" />
+
+        {/* Favicon (depois que você adicionar) */}
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Helmet>
       
       <HeaderGenerico />

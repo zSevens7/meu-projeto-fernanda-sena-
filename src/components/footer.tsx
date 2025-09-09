@@ -125,9 +125,19 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-[#E6D7B4] pt-4 text-center text-xs">
-          <p className="mb-1">Responsável Técnico: Fernanda Sena Rabelo Santos - CRM 2025512 / RQE 125149</p>
-          <p>Todos os direitos reservados / Desenvolvido por Gabriel Teperino</p>
-        </div>
+        <p className="mb-1">Responsável Técnico: Fernanda Sena Rabelo Santos - CRM 2025512 | RQE 125149</p>
+        <p>
+          Todos os direitos reservados | Desenvolvido por{" "}
+          <a 
+            href="https://github.com/zSevens7" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:underline hover:text-[#E6D7B4] transition-colors"
+          >
+            Gabriel Teperino
+          </a>
+        </p>
+      </div>
       </div>
 
       <a

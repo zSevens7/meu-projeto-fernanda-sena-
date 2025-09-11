@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página inicial -->
+  <url>
+    <loc>https://drafernandasena.com.br/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Páginas principais -->
+  <url>
+    <loc>https://drafernandasena.com.br/fernanda-sena</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://drafernandasena.com.br/a-consulta-geriatrica</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://drafernandasena.com.br/especialidades</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Subpáginas de especialidades -->
+  <url>
+    <loc>https://drafernandasena.com.br/especialidades/checkup</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://drafernandasena.com.br/especialidades/envelhecimento-saudavel</loc>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

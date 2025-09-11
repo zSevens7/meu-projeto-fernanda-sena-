@@ -100,3 +100,26 @@ src/
 - Estrutura moderna e de fácil atualização → mudanças podem ser feitas em tempo real.  
 
 ---
+
+
+# 📊 Melhorias do Novo Site – Dra. Fernanda Sena
+
+| Área                | Como era no WordPress (antes) | Como está no React (agora) | Benefício prático |
+|----------------------|-------------------------------|-----------------------------|--------------------|
+| **Velocidade**       | Carregado com plugins pesados (Elementor, Yoast, etc.) | Código leve em React + Tailwind | Site abre muito mais rápido, melhora a experiência do paciente |
+| **Espaço em disco**  | ~61,7 MB de arquivos (muitas imagens repetidas em várias resoluções) | Apenas ~6,8 MB no build final | Libera espaço no domínio e deixa o site mais leve |
+| **Segurança**        | Plugins/temas desatualizados podiam abrir brechas | Código limpo, sem plugins externos | Menos risco de invasão e menos manutenção |
+| **SEO (Google)**     | Dependia de plugins como Yoast | SEO configurado direto no código (`react-helmet-async`) | Melhor ranqueamento no Google e redes sociais |
+| **Responsividade**   | Tema nem sempre adaptava bem ao celular | Layout construído mobile-first com Tailwind | Navegação fluida em celular e tablet |
+| **Bio da Dra.**      | Página simples, sem destaque | Página personalizada com histórico, credenciais e valores | Passa mais confiança e profissionalismo |
+| **Header/Footer**    | Estrutura básica de tema | Header moderno + Footer com Google Maps embutido | Paciente encontra endereço e contatos com facilidade |
+| **WhatsApp**         | Usava link encurtado por terceiros (ex.: encurt.ly) | Botão direto para WhatsApp oficial | Mais credibilidade, sem intermediários |
+| **Imagens**          | JPG/PNG pesados | Fotos novas em alta qualidade **.webp** otimizadas | Visual mais moderno, site abre mais rápido |
+| **Controle de conteúdo** | Dependia do painel WordPress (plugins/tema) | Código versionado no GitHub | Alterações podem ser feitas **na hora** sem complicação |
+
+---
+
+✅ **Resumo:**  
+O site ficou **10x mais leve**, **mais rápido**, com **SEO otimizado**, **segurança maior** e **mais profissional**.  
+Além disso, qualquer atualização (texto, foto, link) pode ser feita rapidamente sem depender de plugins ou terceiros.
+
